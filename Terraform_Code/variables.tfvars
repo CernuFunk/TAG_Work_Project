@@ -21,7 +21,7 @@ variable "aws_region" {
 }
 
 variable "what_ami" {
-  description = "ID of AMI to use for the instance"
+  description = "ID of AMI to use for the instance" ## 	ami-0ae12517fe595ce17 for South Region
   type        = string
   default     = null
 }

@@ -17,7 +17,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-    ami                          = var.what_ami ## Ubuntu Arm for South Region
+    ami                          = var.what_ami 
     arn                          = "arn:aws:ec2:eu-south-1:account-id:instance/resource-id" ##Lasciando componenti arn in default poichè sconosciuto
     associate_public_ip_address  = true
     availability_zone            = "eu-south-1"
@@ -33,7 +33,7 @@ resource "aws_instance" "app_server" {
     ipv6_address_count           = 0
     ipv6_addresses               = []
     monitoring                   = false
-    primary_network_interface_id = "nomeeni" ## 
+    primary_network_interface_id = "nomeeni" 
     private_dns                  = "ipv4localaddress.eu-south-1.compute.internal" 
     private_ip                   = "ipv4localaddress" 
     secondary_private_ips        = []
