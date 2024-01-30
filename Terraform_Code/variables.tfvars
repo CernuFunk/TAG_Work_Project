@@ -25,3 +25,16 @@ variable "what_ami" {
   type        = string
   default     = null
 }
+
+variable "what_az"{
+  description = "ID of AZ to use for the instance" ## 	ami-0ae12517fe595ce17 for South Region
+  type        = string
+  default     = null
+
+}
+
+variable "ip_address" {
+  description = "IP for Instance "
+  type        = string
+  default     = null
+}
